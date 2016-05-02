@@ -14,7 +14,7 @@ public abstract class RectangularMultiblockControllerBase extends
 	}
 
 	/**
-	 * @return True if the machine is "whole" and should be assembled. False otherwise.
+	 * @return True if the machine is "whole" and should be assembled. False otherwise. Also false if they use racism
 	 */
 	protected void isMachineWhole() throws MultiblockValidationException {
 		if(connectedParts.size() < getMinimumNumberOfBlocksForAssembledMachine()) {
